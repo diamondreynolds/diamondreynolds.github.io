@@ -42,7 +42,7 @@ $(function () {
   createCollectable("diamond", 1050,600, 0.5, 0.7);
   
     // TODO 4 - Create Cannons
-    createCannon("top", 400, 800);
+    createCannon("top", 400, 900);
     createCannon("top", 700, 900);
     createCannon("top", 1000,900);  
     
