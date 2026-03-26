@@ -14,9 +14,32 @@ var score = 0; // variable to keep track of the score
 var started = false; // variable to keep track of whether the game has started
 
 // TODO 4, Part 1: Create the apple variable
-
-
+const apple = {}; 
+function makeApple() {
+const appleElement = $('<div>').addClass('apple').appendTo('#board');
+apple.element = appleElement;
+const randomPosition = getRandomAvailablePosition();
+apple.row = randomPosition.row;
+apple.column = randomPosition.column;
+repositionSquare(apple);
+}
 // TODO 5, Part 1: Create the snake variable
+const snake = {};
+  snakeSquare.element = $("<div>").addClass("snake").appendTo(board);
+  snakeSquare.row = row;
+  snakeSquare.column = column;
+  repositionSquare(snakeSquare);
+if (snake.body.length === 0) {
+  snakeSquare.element.attr("id", "snake-head");
+}
+snake.body.push(snakeSquare);
+snake.tail = snakeSquare;
+snake.body.push(snakeSquare);
+snake.tail = snakeSquare;
+
+
+
+
 
 
 // Constant Variables
@@ -48,7 +71,6 @@ init();
 
 function init() {
   // TODO 5, Part 2: initialize the snake
-  
   
   // TODO 4, Part 3: initialize the apple
 
