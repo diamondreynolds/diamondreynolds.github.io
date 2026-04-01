@@ -71,7 +71,11 @@ init();
 
 function init() {
   // TODO 5, Part 2: initialize the snake
-  
+  snake.body = 
+
+
+
+
   // TODO 4, Part 3: initialize the apple
 
 
